@@ -265,7 +265,7 @@ export default class Debug extends React.Component {
                         onPress={this.onPauseButtonPressed.bind(this)}
                     >
                         <Text style={styles.toolbarButtonText}>
-                            {this.state.paused ? "Resume log" : "Pause log"}
+                            {this.state.paused ? "Continuar" : "Pausar"}
                         </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
@@ -273,13 +273,13 @@ export default class Debug extends React.Component {
                         style={styles.centerColumn}
                     >
                         <Text style={styles.titleText}>{`${this.state.rows
-                            .length} rows`}</Text>
+                            .length} registros`}</Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.toolbarButton}
                         onPress={this.onClearButtonPressed.bind(this)}
                     >
-                        <Text style={styles.toolbarButtonText}>Clear log</Text>
+                        <Text style={styles.toolbarButtonText}>Limpar log</Text>
                     </TouchableOpacity>
                 </View>
                 <View style={styles.listContainer}>
